@@ -1,0 +1,36 @@
+{
+  "name": "kb-pretty-scroll",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keuby/kb-pretty-scroll.git"
+  },
+  "keywords": [
+    "vue",
+    "scroll"
+  ],
+  "author": "Knight Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keuby/kb-pretty-scroll/issues"
+  },
+  "homepage": "https://github.com/keuby/kb-pretty-scroll#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-typescript": "^7.10.4",
+    "rollup": "^2.23.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "typescript": "^3.9.7",
+    "vue": "^2.6.11"
+  },
+  "dependencies": {
+    "perfect-scrollbar": "^1.5.0",
+    "rxjs": "^6.6.0"
+  }
+}

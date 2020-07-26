@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/perfect-scrollbar/css/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <template id="app-template">
+      <div id="app">
+        <div class="wrapper" v-pretty-scroll>
+          <p>使用 directive</p>
+          <p v-for="i in count">
+            测试测试测试测试测试测试测试测试
+          </p>
+        </div>
+        <div class="wrapper">
+          <p>component 带 wrapper</p>
+          <p v-for="i in count">
+            测试测试测试测试测试测试测试测试
+          </p>
+        </div>
+        <button @click="count++">increase</button>
+      </div>
+    </template>
+
+    <script src="../node_modules/vue/dist/vue.min.js"></script>
+    <script src="../node_modules/rxjs/bundles/rxjs.umd.min.js"></script>
+    <script src="../node_modules/perfect-scrollbar/dist/perfect-scrollbar.js"></script>
+    <script src="../dist/index.js"></script>
+    <script>
+      Vue.use(PrettyScroll, {});
+
+      const app = new Vue({
+        el: '#app',
+        template: '#app-template',
+        data: {
+          count: 10,
+        },
+      });
+    </script>
+  </body>
+</html>
